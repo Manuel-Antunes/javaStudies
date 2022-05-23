@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Balance {
+public class Scale {
 
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
@@ -16,14 +16,4 @@ public class Balance {
 
         System.out.println("Caso emagreça 20%, seu peso seria: " + pesoMenos + ". E caso engorde 15%, seu peso seria: " + pesoMais);
     }
-
-
-
-
-
-
-
-
-
-
 }
