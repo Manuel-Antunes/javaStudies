@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Calculator {
 
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
@@ -15,6 +15,7 @@ public class Main {
             x = leitor.nextInt();
             System.out.println("Digite outro número:");
             y = leitor.nextInt();
+            leitor.close();
 
             
             reSoma = x+y;
