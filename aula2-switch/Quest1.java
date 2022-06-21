@@ -9,10 +9,6 @@ public class Quest1 {
         System.out.println("Digite um número de 1 a 7:");
         numero = leitor.nextInt();
 
-        if(numero>7 || numero <1){
-            System.out.println("Digite um número entre 1 e 7...");
-        }
-
         switch (numero) {
             case 1:
             System.out.println("Domingo");
@@ -35,6 +31,8 @@ public class Quest1 {
             case 7:
             System.out.println("Sábado");
             break;
+            default:
+            System.out.println("Digite um número válido!");
         }
         leitor.close();
     }
