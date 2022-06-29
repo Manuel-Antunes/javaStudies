@@ -19,12 +19,12 @@ public class Sigaa {
         
         double soma = 0;
         int i = 0;
+        int bime = 0;
         double maior = 0;
         String result;
-        double media = soma / notas.length;
 
         System.out.println("Digite o bimestre em que deseja consultar nota:");
-        i = leitor.nextInt();
+        bime = leitor.nextInt();
 
         for (i = 0; i < notas.length; i++){
             soma = soma + notas[i];   
@@ -36,13 +36,15 @@ public class Sigaa {
             }
         }
 
-        if(notas[i]>= 6){
+        double media = soma / notas.length;
+
+        if(notas[bime -1]>= 6){
             result = "Aprovado";
         } else {
             result = "Reprovado";
         }
 
-        System.out.println("Nota: " + notas[i]);
+        System.out.println("Nota: " + notas[bime -1]);
         System.out.println("Média: " + media);
         System.out.println("Situação: " + result);
         System.out.println("Maior nota: " + maior);
