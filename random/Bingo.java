@@ -14,7 +14,7 @@ public class Bingo {
         int i = 0;
         String[] nomes = new String[7];
 
-        for (i = 0; i < 7; i++) {
+        for (i = 0; i < nomes.length; i++) {
             System.out.println("Registre um jogador:");
             nomes[i] = leitor.nextLine();
         }
