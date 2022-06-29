@@ -12,20 +12,19 @@ public class Sigaa {
 
         double[] notas = new double[4];
         
-        notas [0] = 7.5;
-        notas [1] = 9.0;
-        notas [2] = 8.0;
+        notas [0] = 7.50;
+        notas [1] = 9.00;
+        notas [2] = 8.00;
         notas [3] = 6.75;
         
         double soma = 0;
         int i = 0;
         double maior = 0;
         String result;
+        double media = soma / notas.length;
 
-        for (i = 0; i < notas.length; i++){
-            System.out.println("Digite o bimestre em que deseja consultar nota:");
-            notas[i] = leitor.nextInt();
-        }
+        System.out.println("Digite o bimestre em que deseja consultar nota:");
+        i = leitor.nextInt();
 
         for (i = 0; i < notas.length; i++){
             soma = soma + notas[i];   
@@ -42,8 +41,6 @@ public class Sigaa {
         } else {
             result = "Reprovado";
         }
-
-        double media = soma / notas.length;
 
         System.out.println("Nota: " + notas[i]);
         System.out.println("Média: " + media);
