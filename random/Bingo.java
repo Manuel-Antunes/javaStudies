@@ -1,5 +1,6 @@
 /* Fazer um mini sistema de bingo para registrar o nome de 7 pessoas 
 e sortear um nome para ganhar (use a classe Random ).*/
+
 import java.util.Scanner;
 import java.util.Random;
 
