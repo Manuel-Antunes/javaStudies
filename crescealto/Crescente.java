@@ -15,19 +15,26 @@ public class Crescente {
             numeros[i] = leitor.nextInt();
         }
 
+        int[] crescente = new int[5];
+
+        for(i = 0; i<5; i++){
+            crescente[i] = numeros[i];
+        }
+
         for(i = 0; i<5; i++){
             for(j = 0; j<4; j++){
-                if(numeros[j] > numeros[j + 1]){
-                    aux = numeros[j];
-                    numeros[j] = numeros[j+1];
-                    numeros[j+1] = aux;
+                if(crescente[j] > crescente[j + 1]){
+                    aux = crescente[j];
+                    crescente[j] = crescente[j+1];
+                    crescente[j+1] = aux;
                 }
             }
         }
 
         for(i=0; i<numeros.length;i++){
-            System.out.println(numeros[i] + " " + numeros[j]);
+            System.out.println(numeros[i] + " " + crescente[i]);
         }
+        leitor.close();
     }
 }
 
