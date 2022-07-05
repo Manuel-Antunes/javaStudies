@@ -19,7 +19,7 @@ public class Bingo {
             nomes[i] = leitor.nextLine();
         }
 
-        int aleatorio = random.nextInt(7);
+        int aleatorio = random.nextInt(nomes.length);
 
         System.out.println("O nome sorteado é: " + nomes[aleatorio]);
 
