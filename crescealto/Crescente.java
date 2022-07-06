@@ -16,7 +16,7 @@ public class Crescente {
 
         for(int i = 0; i <5; i++){
             for(int j = i+1; j <5; j++){
-                if(crescente[i]> crescente[j + 1]){
+                if(crescente[i] > crescente[j]){
                     int aux = crescente[i];
                     crescente[i] = crescente[j];
                     crescente[j] = aux;
